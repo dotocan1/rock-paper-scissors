@@ -1,0 +1,29 @@
+#buttonsDiv {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.button {
+    display: inline;
+}
+
+#rock, #paper, #scissors {
+    background-color: cornflowerblue;
+    font-family: sans-serif;
+    border-radius: 100px;
+    height: 5em;
+    width: 10em;
+    color: floralwhite;
+    font-size: 2em;
+}
+
+#results {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 5em;
+    color: darkgreen;
+}
+
+html {
+    background-image: url(https://www.playworks.org/wisconsin/wp-content/uploads/sites/23/2019/10/RPS-hi-res-graphic.png);
+}
