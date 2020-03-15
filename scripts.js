@@ -62,7 +62,7 @@ const buttons = document.querySelectorAll('button');
 
 const resultsDiv = document.getElementById('results');
 const result = document.createElement('p');
-result.textContent = 'Welcome to my Rock-Paper-Sciccors game!';
+result.textContent = 'Welcome to my Rock-Paper-Scissors game!';
 resultsDiv.appendChild(result);
 
 buttons.forEach((button) => {
