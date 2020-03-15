@@ -62,25 +62,26 @@ const buttons = document.querySelectorAll('button');
 
 const resultsDiv = document.getElementById('results');
 const result = document.createElement('p');
+result.textContent = 'Welcome to my Rock-Paper-Sciccors game!';
 resultsDiv.appendChild(result);
 
 buttons.forEach((button) => {
     button.addEventListener('click', (e) => {
 
-        result.textContent = playRound(button.id.toString().toUpperCase(), computerPlay());
+        result.textContent = counter + 1 + '. Round:  ' + playRound(button.id.toString().toUpperCase(), computerPlay());
         let resultSplit = result.textContent.split(' ');
         if (counter == 4) {
             if (playerScore > computerScore) {
-                result.textContent = 'Congratulations! You win!';
+                result.textContent = counter + 1 + '. Round: ' + 'Congratulations! You win!';
                 counter = 0;
             }
             else if (computerScore > playerScore) {
-                result.textContent = 'Game over! You lose!';
+                result.textContent = counter + 1 + '. Round: ' + 'Game over! You lose!';
                 counter = 0;
             }
 
             else if (playerScore == computerScore) {
-                result.textContent = 'It is a tie! No winners!';
+                result.textContent = counter + 1 + '. Round: ' + 'It is a tie! No winners!';
                 counter = 0;
             }
         }
